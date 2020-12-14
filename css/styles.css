@@ -514,7 +514,6 @@ address {
 .btn-current {
   color: var(--tertiary-bg-color);
   background-color: var(--accent-color);
-  box-shadow: var(--fltr-btn-shadow);
 }
 
 .filter-list-btn:hover,
