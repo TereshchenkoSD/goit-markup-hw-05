@@ -12,6 +12,8 @@
   --card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   --time-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --fltr-btn-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 *,
@@ -512,6 +514,12 @@ address {
 .btn-current {
   color: var(--tertiary-bg-color);
   background-color: var(--accent-color);
+  box-shadow: var(--fltr-btn-shadow);
+}
+
+.filter-list-btn:hover,
+.filter-list-btn:focus {
+  box-shadow: var(--fltr-btn-shadow);
 }
 
 .portfolio-cards {
@@ -525,8 +533,6 @@ address {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
-
-  overflow: hidden;
 
   background: #ffffff;
 }
@@ -548,11 +554,10 @@ address {
   box-shadow: var(--card-shadow);
 }
 
-.portfolio-card-link:hover .card-overlay {
-  opacity: 1;
-}
-
-.portfolio-card-link:hover .card-img-container::before {
+.portfolio-card-link:hover .card-overlay,
+.portfolio-card-link:hover .card-img-container::before,
+.portfolio-card-link:focus .card-overlay,
+.portfolio-card-link:focus .card-img-container::before {
   opacity: 1;
   transform: translateY(0);
 }
@@ -571,7 +576,7 @@ address {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  transition: transform 250ms ;
+  transition: transform 250ms var(--time-function);
 }
 
 .card-overlay {
