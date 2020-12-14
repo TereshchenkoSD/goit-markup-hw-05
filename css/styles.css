@@ -568,10 +568,10 @@ address {
 
 .card-img-container::before {
   position: absolute;
-
   content: '';
   width: 100%;
   height: 100%;
+
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
@@ -580,14 +580,10 @@ address {
 
 .card-overlay {
   position: absolute;
-  opacity: 0;
-
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
-
   padding-left: 24px;
   padding-top: 63px;
   padding-right: 24px;
@@ -598,6 +594,9 @@ address {
   line-height: 1.555;
   letter-spacing: 0.03em;
   color: var(--tertiary-text-color);
+
+  transform: translateY(100%);
+  transition: transform 250ms var(--time-function);
 }
 
 .portfolio-text-wrapper {
