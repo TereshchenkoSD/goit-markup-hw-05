@@ -213,13 +213,14 @@ address {
 }
 
 .hero-btn {
-  display: inline-block;
   min-width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 32px;
   padding-right: 32px;
+  border: none;
   border-radius: 4px;
+  cursor: pointer;
 
   color: var(--tertiary-text-color);
   background-color: var(--accent-color);
@@ -538,11 +539,11 @@ address {
   padding-right: 22px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 
   color: var(--primary-text-color);
   background-color: var(--tertiary-bg-color);
 
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
