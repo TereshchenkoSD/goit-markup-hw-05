@@ -239,13 +239,32 @@ address {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: var(--time-function);
+}
+
+.backdrop.is-hidden {
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: var(--time-function);
+  transition-delay: 250ms;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: var(--time-function);
+  transition-delay: 0ms;
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
 
   min-height: 581px;
   width: 528px;
@@ -254,6 +273,11 @@ address {
   border-radius: 4px;
 
   background-color: var(--secondary-bg-color);
+
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: var(--time-function);
+  transition-delay: 250ms;
 }
 
 .modal-close {
