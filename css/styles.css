@@ -241,11 +241,6 @@ address {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
 .modal {
   position: absolute;
   top: 50%;
@@ -253,9 +248,31 @@ address {
   transform: translate(-50%, -50%);
 
   min-height: 581px;
-  min-width: 528px;
+  width: 528px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 
   background-color: var(--secondary-bg-color);
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: var(--secondary-bg-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: none;
+  pointer-events: none;
 }
 /* ============END HERO============= */
 
@@ -401,9 +418,6 @@ address {
 
 .team-list-item {
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
