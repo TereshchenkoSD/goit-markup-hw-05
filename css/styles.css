@@ -147,6 +147,10 @@ address {
   padding-bottom: 32px;
 
   color: var(--primary-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
 }
 
 .contact-link {
@@ -157,6 +161,9 @@ address {
   align-items: center;
 
   color: var(--secondary-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
 }
 
 .contact-icon {
@@ -325,7 +332,7 @@ address {
   bottom: 0;
   width: 100%;
   min-height: 70px;
-  padding-left: 83px;
+  padding-left: 82px;
   padding-right: 82px;
   padding-top: 27px;
   padding-bottom: 27px;
@@ -424,6 +431,10 @@ address {
   border-radius: 50%;
 
   color: var(--primary-link-color);
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
 }
 
 .social-list-icon {
@@ -473,6 +484,10 @@ address {
   border-radius: 4px;
 
   color: var(--primary-link-color);
+
+  transition-property: border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
 }
 
 .clients-list-icon {
@@ -533,6 +548,10 @@ address {
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
 }
 
 .filter-list-btn:hover,
@@ -574,6 +593,12 @@ address {
   display: block;
 }
 
+.portfolio-card-link {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
+}
+
 .portfolio-card-link:hover,
 .portfolio-card-link:focus {
   box-shadow: var(--card-shadow);
@@ -600,8 +625,11 @@ address {
 
   background-color: rgba(33, 150, 243, 0.9);
 
+  opacity: 0;
   transform: translateY(100%);
-  transition: transform 250ms var(--time-function);
+  transition-property: transform, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
 }
 
 .card-overlay {
@@ -615,6 +643,8 @@ address {
   padding-right: 24px;
   padding-bottom: 63px;
 
+  opacity: 0;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 1.555;
@@ -622,7 +652,9 @@ address {
   color: var(--tertiary-text-color);
 
   transform: translateY(100%);
-  transition: transform 250ms var(--time-function);
+  transition-property: transform, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
 }
 
 .portfolio-text-wrapper {
@@ -685,6 +717,10 @@ address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
 }
 
 .address-list-link:hover,
